@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>しろまめ / shiromame</title>
+    <style>
+        @font-face {
+            font-family: 'InkfreeFont';
+            src: url('Inkfree.ttf');
+        }
+
+        body {
+            font-family: 'InkfreeFont', "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            background-color: #3498db;
+            color: white;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header-logo { font-size: 24px; font-weight: bold; }
+
+        .main-content {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 40px 0;
+        }
+
+        .profile-card {
+            background: #fff;
+            padding: 40px;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 380px;
+        }
+
+        .profile-icon {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid #e0f2fe;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 { font-size: 32px; margin: 10px 0 5px; color: #2c3e50; }
+        .en { font-size: 22px; color: #7f8c8d; margin-bottom: 30px; font-family: 'InkfreeFont', sans-serif; }
+
+        .link-list { display: flex; flex-direction: column; gap: 10px; }
+        .link-btn {
+            display: block;
+            padding: 12px;
+            background: #ffffff;
+            color: #3498db;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+            border: 2px solid #e0f2fe;
+        }
+        .link-btn:hover { background: #3498db; color: #fff; transform: scale(1.05); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-logo">shiromame</div>
+    </header>
+
+    <div class="main-content">
+        <div class="profile-card">
+            <!-- 💡 ここがポイントです。直接ファイル名だけを書きます -->
+            <img src="BlueEye.png" alt="しろまめアイコン" class="profile-icon">
+            
+            <h1>しろまめ</h1>
+            <p class="en">shiromame</p>
+            
+            <div class="link-list">
+                <a href="https://youtube.com" class="link-btn" target="_blank">YouTube</a>
+                <a href="https://x.com" class="link-btn" target="_blank">X (Twitter)</a>
+                <a href="https://discord.gg" class="link-btn" target="_blank">Discord</a>
+                <a href="https://github.com" class="link-btn" target="_blank">GitHub</a>
+                <a href="https://pinterest.com" class="link-btn" target="_blank">Pinterest</a>
+                <a href="https://nicovideo.jp" class="link-btn" target="_blank">niconico</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
